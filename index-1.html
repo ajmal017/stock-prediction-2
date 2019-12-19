@@ -1,0 +1,26 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h1 id="stock-market-predictor">Stock-Market-Predictor</h1>
+<p>Stock Market Predictor with LSTM network. Web scraping and analyzing tools (ohlc, mean)</p>
+<p>With this stock market predictor you will be able to analyze almost 500 companies and their future. This project includes a WebScraping tool to get the stock data from different companies.</p>
+<p>Also you will be able to plot different finance graphs of the OHLC or the mean of the AdjClose</p>
+<h1 id="requirements">Requirements</h1>
+<p>The program uses Python 3.7.3</p>
+<p>There are python files and jupyter notebooks</p>
+<p>Modules used: numpy, pandas, mpl_finance, matplotlib, keras, pickle...</p>
+<h1 id="scraping-the-data">Scraping the data</h1>
+<p>The file of web scraping is <strong>StockScraper.py</strong></p>
+<p>-Execute the function <strong>save_sp500_tickers()</strong> to get the 500 companies tickers and save on a file format .pickle</p>
+<p>-Execute <strong>get_data()</strong> to use the yahoo_finance API and get the data with Pandas from the different companies symbols (required first step) and save it on a folder called stock_dfs</p>
+<p>-Finally execute <strong>compile_data()</strong> to create the  csv of all the companies data for the correlation</p>
+<p>This steps are esential for the next steps</p>
+<p>Optional</p>
+<p>-Use <strong>visualize_data()</strong> to see the plot of the correlation between companies (it will take some time)</p>
+<h1 id="training-the-netwok">Training the netwok</h1>
+<p>The file of neural networkm predictor is is <strong>AIFinance.py</strong></p>
+<p>-To train and test a company you should use the function <strong>predictFuture('AAPL')</strong>
+You can use whatever company symbol you want</p>
+<h1 id="analyze-data">Analyze data</h1>
+<p>Use the jupyter notebook <strong>StockMarket.ipynb</strong></p>
+<p>You will be able to see step by step the different analyze tools and also the training of a company</p>
+<p>The company can be change at the bottom of the notebook</p>
+</body></html>
